@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>QupalsChat.com</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- EMOJI PICKER -->
+  <script type="module"
+  src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js">
+  </script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- LOGIN PAGE -->
+
+  <div id="loginBox" class="loginCard">
+
+    <h1>QupalsHub📨</h1>
+
+    <input
+      type="text"
+      id="username"
+      placeholder="Username"
+    >
+
+    <input
+      type="email"
+      id="email"
+      placeholder="Email"
+    >
+
+    <input
+      type="password"
+      id="password"
+      placeholder="Password"
+    >
+
+    <button id="signupBtn">
+      Sign Up
+    </button>
+
+    <button id="loginBtn">
+      Login
+    </button>
+
+  </div>
+
+  <!-- CHAT PAGE -->
+
+  <div id="chatBox" class="hidden">
+
+    <!-- TOPBAR -->
+
+    <div class="topbar">
+
+      <div class="logoArea">
+
+        <h2>QupalsChat</h2>
+
+      </div>
+
+      <div class="topButtons">
+
+        <button id="darkBtn">
+          🌙
+        </button>
+
+        <button id="logoutBtn">
+          Logout
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- USERS BAR -->
+
+    <div class="usersBar">
+
+      <button id="groupBtn"
+              class="chatUser">
+
+        🌍 Group Chat
+
+      </button>
+
+      <div id="usersList"></div>
+
+    </div>
+
+    <!-- CHAT TITLE -->
+
+    <div id="chatTitle">
+
+      Group Chat
+
+    </div>
+
+    <!-- TYPING -->
+
+    <div id="typingStatus"></div>
+
+    <!-- MESSAGES -->
+
+    <div id="messages"></div>
+
+    <!-- EMOJI PICKER -->
+
+    <emoji-picker id="picker"></emoji-picker>
+
+    <!-- SEND BOX -->
+
+    <div class="sendBox">
+
+      <input
+        type="text"
+        id="messageInput"
+        placeholder="Type message..."
+      >
+
+      <!-- IMAGE -->
+
+      <input
+        type="file"
+        id="imageInput"
+        hidden
+        accept="image/*"
+      >
+
+      <button id="imageBtn">
+        📷
+      </button>
+
+      <!-- GIF -->
+
+      <button id="gifBtn">
+        GIF
+      </button>
+
+      <!-- EMOJI -->
+
+      <button id="emojiBtn">
+        😀
+      </button>
+
+      <!-- SEND -->
+
+      <button id="sendBtn">
+        Send
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
